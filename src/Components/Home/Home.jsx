@@ -27,10 +27,6 @@ const Home = () => {
     }
 
 
-    // using for text
-    const shoot = (s) => {
-        setClick(click+1)
-    }
 
     return (
         <section className="home">
@@ -85,12 +81,6 @@ const Home = () => {
                         <span>MORE FILTERS</span>
                     </div>
                     
-                    {/* usig for text */}
-                    <div className="searchNumbers">
-                         <div className="iconNumber">
-                    <button onClick={shoot}>{click}</button>   
-                        </div>
-                    </div>
 
 
                 </div>
