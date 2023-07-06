@@ -31,7 +31,7 @@ const Home = () => {
     return (
         <section className="home">
             <div className="overlay"></div>
-            <video src={video} type="video/mp4" muted autoPlay loop className="oceanvideo"></video>
+            <video src={video} type="video/mp4" muted autoPlay loop playsInline className="oceanvideo"></video>
 
             <div className="homeContent container">
                 <div className="textDiv">
