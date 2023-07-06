@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display&family=Lato&family=Poppins:wght@300&family=Roboto:ital,wght@0,500;1,300;1,700&family=Signika&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,37 +8,58 @@
 }
 
 /* Colors and styling */
-:root{
- 
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+
 }
 
-a{
+html{
+    scroll-behavior: smooth;
+}
+
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
-.section{
+
+.section {
     padding: 4rem 0 2rem;
 }
-.container{
+
+.container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
-.icon{
+
+.icon {
     font-size: 2rem;
     cursor: pointer;
 }
-.flex{
+
+.flex {
     display: flex;
     align-items: center;
 }
-.grid{
+
+.grid {
     display: grid;
     align-items: center;
 }
-.btn{
+
+.btn {
     padding: .6rem 1.5rem;
     background: var(--gradientColor);
     border-radius: 3rem;
@@ -46,25 +67,47 @@ li{
     outline: none;
     cursor: pointer;
 }
-.btn a{
+
+.btn a {
     color: var(--whiteColor);
     font-weight: 500;
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--SecondaryColor);
 }
 
-img, video{
+img,
+video {
     width: 100%;
     height: auto;
 }
-input{
+
+input {
     font-size: 100%;
 }
-body{
+
+body {
     background: var(--bodyColor);
 }
 
 /* this is a default stling that will apply to all
 the sections, Please be patient you will see how it
 works. */
+
+/* Media Queries */
+@media screen and (min-width: 1240px) {
+    .container{
+        width: 80% !important;
+        margin: auto !important;
+    }
+    .section{
+        padding: 6rem 0 4rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    body{
+        zoom: 1.7;
+    }
+}
